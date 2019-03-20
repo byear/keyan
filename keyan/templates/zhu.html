@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="shortcut icon" type="image/x-icon" href="/templets/rmyy/image/logo.ico" media="screen" /> 
+<title> 苏州大学文正学院科研管理系统</title>
+
+	<!--这里是样式-->
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}"  />
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}"  />
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='nav.css')}}"  />
+<!--<script  type="text/javascript" src="{{url_for('static', filename='jquery-1.7.1.min.js')}}"></script>-->
+<!--<script  type="text/javascript" src="{{url_for('static', filename='js.js')}}"></script>-->
+<!--<script  type="text/javascript" src="{{url_for('static', filename='fun.js')}}"></script>-->
+<!--<script  type="text/javascript" src="{{url_for('static', filename='form.js')}}"></script>-->
+
+</head>
+
+
+
+
+<body>
+
+<div class="headDiv"> 
+ <div class="wal">
+
+  <a href="/" class="logo"><img src="{{url_for('static', filename='logo1.png')}}" target="_blank"/></a>
+   <div style="left: 280px; position: absolute; top: 18px;"><font face="字体名称" size="10" color="#B9D3EE">科研管理系统</font></div>
+  <div class="topLanguage">
+   <ul>
+    <li><a href= "/index" target="_blank">学生版</a></li>
+    <li><a href= # target="_blank" style="color:#5292c8;">管理员版</a></li>
+    <li><a href= "/index" target="_blank">教师版</a></li>
+
+   </ul>
+  </div>
+ </div>
+</div>
+<div class="wal nav">
+ <ul>
+  <li><a href= # >网站首页</a></li>
+  <li><a href= # >学院概况</a></li>
+  <li><a href= # >新闻工作</a></li>
+  <li><a href= # >科研管理</a> </li>
+   <li><a href= # >人才培养</a></li>
+  <li><a href= # >国际交流</a></li>
+  <li><a href= # >学术成果</a></li>
+  <li><a href= # >科学研究</a></li>
+
+ </ul>
+ <form method="post" action="/search.php" name='searchall'>
+  <div class="topSearch">
+   <input type="text" name='keyword'   class="input1 input_hover" value="Search" onblur="if(this.value=='')this.value='Search'" onfocus="if(this.value=='Search')this.value=''" title="Search" />
+   <input type="button" class="btn1"  onclick="document.searchall.submit()"/>
+  </div>
+ </form>
+</div>
+
+
+
+<div class="wal">
+<!--wal-->
+<div class="pageNow">
+<a href='/index/'>主页</a> ->  <a href=#>科研管理系统</a>
+</div>
+
+<div class="fl w221">
+      <div class="sideNav">
+	        <h1>
+			科学研究
+			</h1>
+            <ul>
+			  
+              <li><a href= # class="">科研概况</a></li>
+              
+              <li><a href= # class="">成果展示</a></li>
+              
+              <li><a href= # class="">通知公告</a></li>
+              
+              <li><a href= #  class="">科技动态</a></li>
+              <li><a href= # class="">学术活动</a></li>
+              
+
+              
+            </ul>
+      </div>
+</div><div class="fr w747">
+	  <h1 class="pageTitle">科研管理(仅管理员)</h1>
+<!--      <div class="newsImg">
+            <ul>
+			  
+            </ul>
+      </div>-->
+	 
+	  <div class="newsList"><ul>
+        <li><a href= '/main' style="color:#5292c8;">点击爬取知网上我院教师和学生的论文</a><span>2018-11-1 </span></li>
+        <li><a href= # >科研管理信息化平台简介</a><span>2018-11-1 </span></li>
+	    <li><a href="http://jwc.sdwz.cn/2018/0525/c1011a28241/page.htm">苏州大学文正学院教师科研项目汇总表</a><span>2018-11-1 </span></li>
+        <li><a href= "http://xsc.sdwz.cn/2018/0918/c703a30493/page.htm ">苏州大学文正学院学生科研与竞赛项目管理办法</a><span>2018-11-1 </span></li>
+		<li><a href= "http://news.sdwz.cn/2018/0927/c161a30543/page.htm" >我院第二十批大学生课外学术科研基金项目结项答辩会成功举办</a><span>2018-11-1 </span></li>
+	</ul> </div>
+      <!---->
+        <br>
+      <div class="pageNum" style="padding-top:10px;">
+      <span class="pageinfo">共 <strong>1</strong>页<strong>5</strong>条记录</span>
+
+      </div>
+</div>      
+<span class="clear_f"></span>
+<!--walEnd-->
+</div>
+
+<!--<script src="/scripts/stat.js"></script>-->
+
+<br><br><br><br><br><br>
+
+<div class="footDiv">
+ <div class="wal">
+<div class="banner-shadow"></div>
+  <div class="footer" align="center">
+
+	  <p style="font-size:12px;">邮编：215104</p>
+	  <p style="font-size:12px;">电话：0512-66555732</p>
+	  <p style="font-size:12px;">地址：江苏省苏州市吴中区吴中大道1188号</p>
+
+   <div class="msg" style="font-size:12px;">COPYRIGHT ©苏州大学文正学院</div>
+  </div>
+ </div>
+</div>
+
+</body>
+</html>

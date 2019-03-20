@@ -1,0 +1,10 @@
+.nav a {
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 48px;
+    line-height: 40px;
+    padding: 0 21px;
+    position: relative;
+    top: 2px;
+}

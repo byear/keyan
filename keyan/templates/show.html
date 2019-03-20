@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爬取结果</title>
+</head>
+<body background="{{url_for('static', filename='pachongbanner2.jpg')}}"
+      style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment:fixed;background-color: rgba(0,0,1,0.5);" >
+
+<div align="center" style="margin-top:50px">
+    <font size="5" color="white"><strong>您的爬取结果如下：</strong></font><br><br>
+</div>
+
+{% for line in layout %}
+    <font size="3" color="white"><strong>{{line}}</strong></font><br><br>
+{% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>系统登录</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='login.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='demo.css')}}">
+	 <script type="text/javascript" src="{{url_for('static', filename='jquery1.42.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='jquery.SuperSlide.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='Validform_v5.3.2_min.js')}}"></script>
+
+<!--<script type="text/javascript" src="js/jquery1.42.min.js"></script>-->
+<!--<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>-->
+<!--<script type="text/javascript" src="js/Validform_v5.3.2_min.js"></script>-->
+
+
+
+</head>
+
+<body>
+
+
+<div class="header">
+  <h1 class="headerLogo"><a title="苏州大学文正学院科研管理系统" target="_blank" href="#"><img alt="logo" src="{{url_for('static', filename='logo.png')}}"></a></h1>
+	<div class="headerNav">
+		<a target="_blank" href="#">首页</a>
+		<a target="_blank" href="#">联系我们</a>
+		<a target="_blank" href="#">意见反馈</a>
+		<a target="_blank" href="#">帮助</a>
+	</div>
+</div>
+
+<div class="banner">
+<form  method="post"  class="form center">
+<div class="login-aside">
+  <div id="o-box-up"></div>
+  <div id="o-box-down"  style="table-layout:fixed;">
+   <div class="error-box"></div>
+
+   <br class="registerform">
+	  <div class="userid">
+		  <label for="logonId" class="form-label">用户名：</label>
+		  <input type="text" maxlength="100"  name="userid" class="i-text" placeholder="请输入你的用户名" value=""/>
+	  		<div class="ui-form-explain"></div>
+	  </div>
+   <!--<div class="fm-item">-->
+	   <!--<label for="logonId" class="form-label">用户名：</label>-->
+	   <!--<input type="text"  maxlength="100" id="userid" class="i-text"  >-->
+       <!--<div class="ui-form-explain"></div>-->
+  <!--</div>-->
+
+  <div class="userid">
+	   <label for="logonId" class="form-label">密码：</label>
+	   <input type="password" value="" maxlength="100"  name="password"  class="i-text" placeholder="请输入你的密码" >
+       <div class="ui-form-explain"></div>
+  </div>
+
+  <!--<div class="fm-item pos-r">-->
+	   <!--<label for="logonId" class="form-label">验证码</label>-->
+	   <!--<input type="text" value="" maxlength="100" id="yzm" placeholder="请输入验证码" class="i-text yzm"  >-->
+       <!--<div class="ui-form-explain"><img src="{{url_for('static', filename='yzm.jpg')}}" class="yzm-img" /></div>-->
+  <!--</div>-->
+	   <br>
+<div class="login_submit">
+					<input class="submit" type="submit" name="submit" value="立即登录" >
+
+				</div><br>
+	  <div><font color="white"><strong>{{error}}</strong></font>></div>
+  <!--<div class="fm-item">-->
+	   <!--<label for="logonId" class="form-label"></label>-->
+	   <!--<input type="submit" value="" tabindex="4" id="send-btn" class="btn-login">-->
+       <!--<div class="ui-form-explain"></div>-->
+  <!--</div>-->
+
+
+  </div>
+
+</div>
+</form>>
+	<div class="bd">
+		<ul>
+			<li style="background:url({{url_for('static', filename='picture2.jpg')}}) #CCE1F3 center 0 no-repeat;"><a target="_blank" href="#"></a></li>
+			<!--<li style="background:url(themes/theme-pic2.jpg) #BCE0FF center 0 no-repeat;"><a target="_blank" href="#"></a></li>-->
+		</ul>
+	</div>
+
+	<div class="hd"><ul></ul></div>
+</div>
+<script type="text/javascript">jQuery(".banner").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click" });</script>
+
+
+<div class="banner-shadow"></div>
+
+<div class="footer">
+   <p>Copyright &copy;  ©苏州大学文正学院<a href="http://www.cssmoban.com/" target="_blank" title="文正学院">文正学院</a></p>
+</div>
+
+</body>
+</html>

@@ -1,3 +1,4 @@
+# encoding: utf-8
 #先用GUI做科研管理系统雏形，之后在移植到flask框架
 from tkinter import *
 import random

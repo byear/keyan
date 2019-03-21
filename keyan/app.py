@@ -1,13 +1,14 @@
+# encoding: utf-8
 from flask import  Flask,render_template,redirect,request,session,flash
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, String,Integer
 from lxml import html
 import requests
 import csv
+import pysql
 app=Flask(__name__)
 app.secret_key='123'
 
-#配置数据库
 app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:19970719@127.0.0.1/keyan'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 db=SQLAlchemy(app)
@@ -17,7 +18,7 @@ class User(db.Model):
     id = Column(String(20), primary_key=True)#注意这里py2和py3的区别，py2再用Column的时候需要用db.Column而py3则不需要
     password=Column(String(20), unique=True)
 #开始页面
-@app.route('/index/',methods=['POST','GET'])
+@app.route('/',methods=['POST','GET'])
 def login():
      if request.method=='GET':
          return render_template('index.html')
